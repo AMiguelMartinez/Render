@@ -23,7 +23,7 @@ app.listen(port, () => {
 
 async function main() {
   try {
-    await crearTabla(); // Espera a que se cree la tabla antes de iniciar
+    //await crearTabla(); // Espera a que se cree la tabla antes de iniciar
     app.listen(port, () => {
       console.log(`Servidor corriendo en el puerto ${port}`);
     });
