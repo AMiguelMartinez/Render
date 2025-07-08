@@ -3,9 +3,9 @@ import { getAllSaludos, getSaludoById, createSaludo, updateSaludo, deleteSaludo 
 
 const router = Router();
 
-router.get('/s', getAllSaludos);
+router.get('/', getAllSaludos);
 router.get('/:id', getSaludoById);
-router.post('/s', createSaludo);
+router.post('/', createSaludo);
 router.put('/:id', updateSaludo);
 router.delete('/:id', deleteSaludo);
 
