@@ -4,10 +4,12 @@ import { Saludo } from '../types/saludo.js';
 
 export  const getAllSaludos = async (req, res) => {
     try {
+        console.log("Entrando a getAllSaludos");
         const result = await pool.query('SELECT * FROM saludos');
         res.json(result.rows);
     }
     catch (error: any) {
+        console.error('Error en getAllSaludos:', error.message);
         res.status(500).json({ error: error.message });
     }
 }

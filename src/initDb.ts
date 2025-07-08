@@ -9,10 +9,8 @@ async function crearTabla() {
       );
     `);
     console.log('Tabla creada con éxito');
-    process.exit(0);
   } catch (err: any) {
     console.error('Error al crear la tabla:', err.message);
-    process.exit(1);
   }
 }
 
