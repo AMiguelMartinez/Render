@@ -16,4 +16,4 @@ async function crearTabla() {
   }
 }
 
-crearTabla();
+export default crearTabla;
