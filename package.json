@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "init-db": "ts-node src/initDb.ts"
   },
   "compilerOptions": {
     "target": "es6",
@@ -22,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "pg": "^8.16.2"
   },
